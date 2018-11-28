@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Kallio Digital - The longer you wait for the future, shorter it will be',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
