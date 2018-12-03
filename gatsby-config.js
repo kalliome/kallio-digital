@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Kallio Digital - The longer you wait for the future, shorter it will be',
+    title: 'Kallio Digital',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
