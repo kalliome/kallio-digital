@@ -23,14 +23,14 @@ html
   h1
     font-family: ff-tisa-web-pro, georgia
     font-size: 40px
-    line-height: 60px
+    line-height: 50px
     font-weight: 400
     @media screen and (max-width: 600px)
       font-size: 24px
       line-height: 32px
     a
       color: #fff
-      text-decoration-color: rgba(#fff, .4)
+      text-decoration-color: rgba(#fff, .2)
       &:hover
         text-decoration-color: #fff
 
@@ -47,3 +47,45 @@ html
     margin-right: -13px
     background: rgba(#fff, .2)
     height: 4px
+
+/* Animations */
+
+.a-l
+  img
+    visibility: hidden
+    opacity: 0
+    transition: .5s opacity ease-in-out
+    .a-s2 &
+      opacity: 1
+      visibility: visible
+  &:after
+    transition: .5s all ease-in-out
+    transform: translateX(-200px)
+    opacity: 0
+    .a-s1 &
+      transform: translateX(0)
+      opacity: 1
+
+.a-t1,
+.a-t2,
+.a-t3
+  transition: .5s all ease-in-out
+  visibility: hidden
+  opacity: 0
+
+.a-t3
+  display: inline-block
+  transform: translateX(20px)
+
+.a-s3 .a-t1
+  opacity: 1
+  visibility: visible
+
+.a-s4 .a-t2
+  opacity: 1
+  visibility: visible
+
+.a-s5 .a-t3
+  opacity: 1
+  visibility: visible
+  transform: translateX(0px)
